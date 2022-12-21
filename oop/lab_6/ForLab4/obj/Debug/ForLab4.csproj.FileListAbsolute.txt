@@ -1,0 +1,13 @@
+C:\Users\Владимир\source\repos\lab_4\ForLab4\obj\Debug\ForLab4.csproj.AssemblyReference.cache
+C:\Users\Владимир\source\repos\lab_4\ForLab4\obj\Debug\Interop.MSForms.dll
+C:\Users\Владимир\source\repos\lab_4\ForLab4\obj\Debug\ForLab4.csproj.ResolveComReference.cache
+C:\Users\Владимир\source\repos\lab_4\ForLab4\obj\Debug\ForLab4.csproj.CoreCompileInputs.cache
+C:\Users\Владимир\source\repos\lab_4\ForLab4\bin\Debug\ForLab4.dll
+C:\Users\Владимир\source\repos\lab_4\ForLab4\bin\Debug\ForLab4.pdb
+C:\Users\Владимир\source\repos\lab_4\ForLab4\bin\Debug\Figures.dll
+C:\Users\Владимир\source\repos\lab_4\ForLab4\bin\Debug\System.Drawing.Common.dll
+C:\Users\Владимир\source\repos\lab_4\ForLab4\bin\Debug\Figures.pdb
+C:\Users\Владимир\source\repos\lab_4\ForLab4\bin\Debug\System.Drawing.Common.xml
+C:\Users\Владимир\source\repos\lab_4\ForLab4\obj\Debug\ForLab4.csproj.CopyComplete
+C:\Users\Владимир\source\repos\lab_4\ForLab4\obj\Debug\ForLab4.dll
+C:\Users\Владимир\source\repos\lab_4\ForLab4\obj\Debug\ForLab4.pdb
