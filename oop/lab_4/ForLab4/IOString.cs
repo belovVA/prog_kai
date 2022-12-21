@@ -21,7 +21,7 @@ namespace ForLab4
         
 
 
-        public static void ProcessInputString(string stroke)
+        public void ProcessInputString(string stroke)
         {
 
             operators.Clear();
@@ -102,7 +102,7 @@ namespace ForLab4
 
             
         }
-        static void ValidateInputString()
+        public void ValidateInputString()
         {
             if (operators.Count > 0) // проверка на пустую строку
             {
@@ -131,7 +131,7 @@ namespace ForLab4
                 comboBox1.Items.Add("Вы не ввели операцию.");
             }
         }
-        static bool IsNotOperation(char item)
+        private bool IsNotOperation(char item)
         {
             if (!(item == 'D' || item == 'M' || item == 'N' || item == 'C' || item == ',' || item == '(' || item == ')'))
             {
@@ -143,7 +143,7 @@ namespace ForLab4
             }
         }
 
-        static bool ParameterCheck()
+        private bool ParameterCheck()
         {
             Stack<Operand> stack = new Stack<Operand>(operands);
             int stack_lenght = stack.Count;

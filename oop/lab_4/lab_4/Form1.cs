@@ -29,7 +29,8 @@ namespace lab_4
         {
             if (e.KeyCode == Keys.Enter)
             {
-                IOString.ProcessInputString(textBoxInputString.Text);
+                IOString str = new IOString();
+                str.ProcessInputString(textBoxInputString.Text);
                 
             }
         }
