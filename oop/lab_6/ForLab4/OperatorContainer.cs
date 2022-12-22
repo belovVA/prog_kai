@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace ForLab4
 {
@@ -11,7 +7,6 @@ namespace ForLab4
         public static List<Operator> operators = new List<Operator>();
         static OperatorContainer()
         {
-
             operators.Add(new Operator('D'));
             operators.Add(new Operator('N'));
             operators.Add(new Operator('C'));
@@ -19,8 +14,8 @@ namespace ForLab4
             operators.Add(new Operator(','));
             operators.Add(new Operator('('));
             operators.Add(new Operator(')'));
-
         }
+
         public static Operator FindOperator(char s)
         {
             foreach(Operator op in operators)

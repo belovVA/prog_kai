@@ -1,35 +1,28 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Drawing;
 using Figures;
+
 namespace ForLab4
 {
     public class IOString
     {
-        public static Bitmap bitmap;
-        public static ComboBox cmbbx_plug;
         public static ComboBox comboBox1;
-        public static PictureBox picturebox;
 
         static Stack<Operator> operators = new Stack<Operator>();
         static Stack<Operand> operands = new Stack<Operand>();
-        static ShapeContainer figure_list = new ShapeContainer();
         
-
-
+        /// <summary>
+        /// Обработка входящей строки
+        /// </summary>
+        /// <param name="stroke">Входящая строка</param>
         public void ProcessInputString(string stroke)
         {
-
             operators.Clear();
             operands.Clear();
             stroke = stroke.Replace(" ", "");
             for (int i = 0; i < stroke.Length; i++)
             {
-
                 char c = stroke[i];
                 if (IsNotOperation(c)) // является ли символ названием команды
                 {
@@ -98,10 +91,8 @@ namespace ForLab4
                 }
             }
             ValidateInputString();
-            
-
-            
         }
+
         public void ValidateInputString()
         {
             if (operators.Count > 0) // проверка на пустую строку
@@ -131,6 +122,12 @@ namespace ForLab4
                 comboBox1.Items.Add("Вы не ввели операцию.");
             }
         }
+
+        /// <summary>
+        /// Проверка на соответствие операции
+        /// </summary>
+        /// <param name="item">Знак операции</param>
+        /// <returns>true - если знак операции, false - нет</returns>
         private bool IsNotOperation(char item)
         {
             if (!(item == 'D' || item == 'M' || item == 'N' || item == 'C' || item == ',' || item == '(' || item == ')'))
@@ -169,6 +166,7 @@ namespace ForLab4
             }
             return true;
         }
+
         static void SelectingPerformingOperation(Operator op)
         {
             if (op.symbolOperator == 'C')
