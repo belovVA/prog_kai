@@ -1,5 +1,4 @@
-﻿
-namespace ForLab4
+﻿namespace ForLab4
 {
     public class Operand
     {
